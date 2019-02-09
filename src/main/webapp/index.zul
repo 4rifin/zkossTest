@@ -1,0 +1,44 @@
+<!-- <?page title="Auto Generated index.zul"?>
+<window title="Hello World!!" border="normal" width="200px">
+
+<label value="You are using: Tests Zk ${desktop.webApp.version}"/>
+
+</window> -->
+
+<window border="normal" width="100%" title="Welcome! New User" apply="zkoss.RegistrationComposer">
+    <grid hflex="1"> <!-- hflex="1" - available width inside parent (window) -->
+        <columns visible="false">
+            <column/><!-- define 2 columns to enable auxhead/er -->
+            <column/>
+        </columns>
+        <auxhead>
+            <auxheader colspan="2" label="Registration Form" style="font-size:16px" image="/images/picture.png"/>
+        </auxhead>
+        <rows>
+            <row>
+                User Name <textbox id="nameBox" hflex="1" constraint="no empty"/>
+            </row>
+            <row>
+                Gender:
+                <radiogroup id="genderRadio">
+                    <radio label="Male" value="male" image="/images/male.png" checked="true"/>
+                    <radio label="Female" value="female" image="/images/female.png"/>
+                </radiogroup>
+            </row>
+            <row >
+                Birthday <datebox id="birthdayBox" hflex="1" constraint="no empty, no today, no future"/>
+            </row>
+            <row spans="2" align="center" >
+                <hlayout>
+                    <checkbox id="acceptTermBox"/> Accept Term of Use
+                </hlayout>
+            </row>
+            <row spans="2" align="right">
+                <hlayout>
+                    <button id="resetButton" label="Reset" />
+                    <button id="submitButton" label="Submit" disabled="true"/>
+                </hlayout>
+            </row>
+        </rows>
+    </grid>
+</window>
