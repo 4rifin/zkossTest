@@ -127,6 +127,7 @@
     </dependencies>
     
 <!-- Add the plugin to start ''Main.class'' -->
+<build>
 <plugin>
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>appassembler-maven-plugin</artifactId>
@@ -149,4 +150,5 @@
         </execution>
     </executions>
 </plugin>
+</build>
 </project>
