@@ -58,8 +58,8 @@ public class RegistrationComposer extends SelectorComposer<Component> {
 	
 	@Listen("onClick = #submitButton")
 	public void submitForm() {
-		Messagebox.show("Congratulation! "+nameBox.getValue()+/*genderRadio.getTooltip()+*/". Your registration is success.");
-		logger.info("Congratulation! "+nameBox.getValue()+/*genderRadio.getTooltip()+*/". Your registration is success.");
+		Messagebox.show("Congratulation! "+nameBox.getValue()+" "+genderRadio.getTooltip()+". Your registration is success.");
+		logger.info("Congratulation! "+nameBox.getValue()+" "+genderRadio.getTooltip()+". Your registration is success.");
 		clean();
 	}
 }

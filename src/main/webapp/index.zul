@@ -33,11 +33,17 @@
                     <checkbox id="acceptTermBox"/> Accept Term of Use
                 </hlayout>
             </row>
-            <row spans="2" align="right">
-                <hlayout>
-                    <button id="resetButton" label="Reset" />
-                    <button id="submitButton" label="Submit" disabled="true"/>
-                </hlayout>
+            <row>
+            <a href="mailto:ndms.arifin@gmail.com" label="© Developer"/>
+            	<div align="right">
+					<hlayout>
+					    <button  id="resetButton" label="Reset" />
+                   	 	<button id="submitButton" label="Submit" disabled="true"/>
+                	</hlayout>
+				</div>
+            </row>
+            <row>
+            	
             </row>
         </rows>
     </grid>
