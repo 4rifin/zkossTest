@@ -15,7 +15,7 @@
         <zkgmap.version>3.0.4</zkgmap.version>
     </properties>
     
-  <!-- <packaging>war</packaging> -->
+  <packaging>war</packaging>
     
     <name>The sample Project</name>
     <description>The sample Project</description>
